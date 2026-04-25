@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List App</title>
+    <link rel="stylesheet" href="final-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <div class="header-section">
+            <div class="icon-circle">✓</div>
+            <h1>To-Do List</h1>
+            <p>Stay organized and productive</p>
+        </div>
+
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add a new task..." />
+          <button onclick="addTask()" class="add-button">+ Add</button>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="count blue" id="active-count">0</span>
+                <span class="label">Active</span>
+            </div>
+            <div class="stat-box">
+                <span class="count green" id="completed-count">0</span>
+                <span class="label">Completed</span>
+            </div>
+            <div class="stat-box">
+                <span class="count black" id="total-count">0</span>
+                <span class="label">Total</span>
+            </div>
+        </div>
+
+        <ul id="list-container">
+            </ul>
+      </div>
+    </div>
+    <script src="final-script.js"></script>
+  </body>
+</html>
